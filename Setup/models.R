@@ -42,16 +42,12 @@
 ### Additional sample sizes ####################################################
 
   # Additional sizes
-  models_250 <- models
-  models_500 <- models
   models_1000 <- models
   models_2500 <- models
 
   # Change sizes
-  for(i in 1:length(models_250)) models_250[[i]]$sample_size <- 250
-  for(i in 1:length(models_500)) models_500[[i]]$sample_size <- 500
   for(i in 1:length(models_1000)) models_1000[[i]]$sample_size <- 1000
   for(i in 1:length(models_2500)) models_2500[[i]]$sample_size <- 2500
 
   # Add
-  models <- c(models,models_250,models_500,models_1000,models_2500)
+  models <- c(models,models_1000,models_2500)
